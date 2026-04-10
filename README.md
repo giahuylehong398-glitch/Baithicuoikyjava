@@ -1,5 +1,14 @@
 # Baithicuoikyjava
-## 👥 Thông tin nhóm (Team Members)
+🚀 I. GIỚI THIỆU DỰ ÁN
+"Snake Game Classic" là một dự án lập trình ứng dụng dựa trên nền tảng Java Swing, nhằm tái hiện lại trò chơi huyền thoại với những cải tiến về mặt kỹ thuật và trải nghiệm người dùng. Dự án tập trung vào việc áp dụng các nguyên lý lập trình hướng đối tượng (OOP) và mô hình MVC để tạo ra một cấu trúc mã nguồn sạch và dễ mở rộng.
+
+
+
+
+
+
+
+II.## 👥 Thông tin nhóm (Team Members)
 
 | STT | Họ và Tên | Mã Sinh Viên | Vai trò / Nhiệm vụ | Link GitHub Cá Nhân |
 |-----|-----------|--------------|---------------------|----------------------|
