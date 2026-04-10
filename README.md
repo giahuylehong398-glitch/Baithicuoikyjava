@@ -10,28 +10,37 @@
 ✨ III. CÁC TÍNH NĂNG NỔI BẬT
 
 1.Giao diện hiện đại: Sử dụng đồ họa lưới caro, màu sắc Gradient mang lại cảm giác dễ nhìn và chuyên nghiệp.
+
 2.Hệ thống vật cản (Obstacles): Các tảng đá xuất hiện ngẫu nhiên giúp tăng độ khó và tính thử thách cho trò chơi.
+
 3.Âm thanh tương tác: Tích hợp âm thanh khi ăn mồi và khi kết thúc trò chơi bằng kỹ thuật đa luồng (Multithreading).
+
 4.Lưu trữ Kỷ lục: Sử dụng File I/O để ghi lại điểm số cao nhất (High Score) vào file highscore.txt.
 
 
 
 
 🛠 IV. CÔNG NGHỆ & KỸ THUẬT SỬ DỤNG
+
 Kiến trúc MVC: Chia dự án thành 3 phần chính (Model - dữ liệu, View - hiển thị, Controller - điều khiển) để quản lý code hiệu quả.
+
 Xử lý Đồ họa: Sử dụng thư viện Java Swing và Graphics2D để vẽ các đối tượng chuyển động mượt mà.
+
 Xử lý Ngoại lệ: Tự định nghĩa lớp HoangYenNhiException để quản lý các lỗi đặc thù trong quá trình vận hành game.
 
 
 
 📝 V. GIẢI THÍCH MÃ NGUỒN CHI TIẾT
+
 1. Cơ chế di chuyển (Logic "Thêm đầu, xóa đuôi")
 Hệ thống sử dụng một danh sách ArrayList<Point>. Khi rắn di chuyển, một tọa độ mới được thêm vào đầu danh sách. Nếu rắn không ăn mồi, phần tử cuối cùng của danh sách sẽ bị xóa, tạo cảm giác rắn đang bò.
+
 2. Xử lý va chạm (Collision Detection)
 Hàm checkCollision() trong GameController liên tục kiểm tra tọa độ đầu rắn với:
 Biên của màn hình (Tường).
 Các đốt thân của chính con rắn.
 Tọa độ của các tảng đá (Vật cản).
+
 3. Xử lý Âm thanh Đa luồng
 Để âm thanh không gây đứng hình (lag) cho game, lớp SoundManager khởi chạy mỗi âm thanh trên một Thread riêng biệt, giúp âm thanh và hình ảnh hoạt động song song.
 
